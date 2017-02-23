@@ -85,7 +85,7 @@
     ##print $commandMainRepository;
     @output = $t->print($commandMainRepository);
     $t->waitfor(Match => '/password: ?$/i', Timeout => 20);
-    $t->print('Telcosyn.');
+    $t->print('password');
     $t->waitfor(Match => '/> ?$/i', Timeout =>900);
     
     ##print $commandBackupRepository;
